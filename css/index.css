@@ -1,0 +1,10 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+h1 {
+	font: 2.25rem Nunito, sans-serif;
+
+	text-align: center;
+}
