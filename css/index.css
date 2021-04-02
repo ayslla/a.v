@@ -3,8 +3,16 @@
 	margin: 0px;
 }
 
-h1 {
-	font: 2.25rem Nunito, sans-serif;
+body {
+	background-image: url(../img/fundo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
 
-	text-align: center;
+@media screen and (max-width: 980px) {
+	body {
+		background-image: url(../img/fundocell.png);
+	}
 }

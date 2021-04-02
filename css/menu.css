@@ -1,0 +1,179 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: roboto,Arial,sans-serif;
+}
+
+header#cabeca {
+    background-color: none;
+    padding: 10px 20px;
+    padding-bottom: 20px;
+    background: rgba(15,15,15,.15);
+}
+
+#logo {
+	width: 115px;
+	margin-top: 0px;
+}
+
+.navbar {
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-left: 0px;
+
+	padding: 0 20px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.hamburguer {
+	width: 30px;
+	height: 30px;
+
+	background-color: transparent;
+	border-radius: 5px;
+	border: 0;
+
+	position: relative;
+	cursor: pointer;
+
+	display: none;
+}
+
+.hamburguer:after {
+	content: "";
+
+	position: absolute;
+	top: 35%;
+	left: 15%;
+
+	width: 70%;
+	height: 5%;
+	border-radius: 5px;
+
+	background-color: #fff;
+}
+
+.hamburguer:before {
+	content: "";
+
+	position: absolute;
+	top: 55%;
+	left: 15%;
+
+	width: 70%;
+	height: 5%;
+	border-radius: 5px;
+
+	background-color: #fff
+}
+
+.menu {
+	list-style: none;
+
+	display: flex;
+	align-items: center;
+
+	margin-top: 5px;
+}
+
+.menu li {
+	padding: 5px;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.menu li.ativo {
+	border-radius: 4px;
+}
+
+.menu li a {
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: white;
+	transition: 0.5s ease;
+	border-radius: 3px;
+}
+
+.menu li a.ativado {
+	background-color: rgb(243, 46, 89);
+	border-radius: 3px;
+}
+
+.menu li a.ativado:hover {
+	background-color: rgb(243, 46, 89);
+}
+
+.menu li a:hover {
+	color: #fff;
+	background-color: rgb(243, 46, 89);
+}
+
+@media screen and (max-width: 980px) {
+	#logo {
+		width: 85px;
+		margin-top: 5px;
+	}
+
+	.hamburguer {
+		display: block;
+		z-index: 999;
+	}
+
+	.menu {
+		position: fixed;
+		top: 0;
+		right: 0;
+
+		height: 100vh;
+		margin: 0px;
+		background-color: rgba(15,15,15,.15);
+		border-left: 2px solid rgba(15,15,15,.15);
+
+		width: 100%;
+		max-width: 250px;
+
+		padding: 100px 20px;
+
+		flex-direction: column;
+
+		transition: 0.5s ease;
+	}
+
+	.menu li {
+		border-bottom: 1px solid white;
+	}
+
+	.menu li:hover {
+		background-color: rgb(243, 46, 89);
+
+		border: 1px solid rgb(243, 46, 89);
+		border-radius: 4px;
+	}
+
+	.menu li.ativo {
+		background-color: rgb(243, 46, 89);
+		border: 1px solid rgb(243, 46, 89)
+	}
+
+	.menu.active {
+		right: -100%;
+	}
+}
