@@ -113,6 +113,7 @@ a {
 }
 
 .menu li a.ativado {
+	text-decoration: underline;
 	background-color: rgb(243, 46, 89);
 	border-radius: 3px;
 }
@@ -122,6 +123,8 @@ a {
 }
 
 .menu li a:hover {
+	text-decoration: underline;
+
 	color: #fff;
 	background-color: rgb(243, 46, 89);
 }
