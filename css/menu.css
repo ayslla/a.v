@@ -10,12 +10,13 @@ body {
 header#cabeca {
     background-color: none;
     padding: 10px 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     background: rgba(15,15,15,.15);
+    border-bottom: 2px solid rgba(15,15,15,.15);
 }
 
 #logo {
-	width: 115px;
+	width: 100px;
 	margin-top: 0px;
 }
 

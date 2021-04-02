@@ -11,6 +11,27 @@ body {
     background-position: center;
 }
 
+#conteudo {
+	width: 94%;
+
+	margin: auto;
+
+	background-color: rgba(15,15,15,.15);
+}
+
+header#principal h1 {
+	text-align: center;
+	font: 2.45rem Nunito,sans-serif;
+
+	color: white;
+
+	padding-top: 10px;
+}
+
+header#principal span#vermei {
+	color: rgb(243, 46, 89);
+}
+
 @media screen and (max-width: 980px) {
 	body {
 		background-image: url(../img/fundocell.png);
